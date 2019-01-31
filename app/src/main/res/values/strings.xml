@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name" translatable="false">FytFunctionalityExtender</string>
+    <string name="app_settings">Application preferences</string>
+    <string name="misc_settings">Miscellaneous ON/OFF Settings</string>
+    <string name="use_root_access_title">Use root access for the system call</string>
+    <string name="use_root_access_sum_on">ON: the system call is executed as root</string>
+    <string name="use_root_access_sum_off">OFF: the system call is executed as normal user</string>
+
+    <string name="acc_on_off_settings">Define apps or actions when the contact/unit is switched ON or OFF; or when coming out of resume.</string>
+    <string name="acc_on_settings">What to do when contact is switched on (ACC_ON)</string>
+    <string name="acc_on_call_title">ACC_ON: Call method</string>
+    <string name="acc_on_text_title">ACC_ON: String to be used</string>
+    <string name="switch_on_wifi_during_accon">Switch WiFi ON when contact is switched on (to overcome PX5 bug)</string>
+    <string name="dont_touch_wifi_during_accon">Do not touch the WiFi state when contact is switched on</string>
+    <string name="switch_on_wifi">Option to switch on WiFi during acc_on.</string>
+    <string name="restart_player_during_accon">Restart active media player when contact is switched on</string>
+    <string name="dont_restart_player_during_accon">Do not restart active media player when contact is switched on</string>
+    <string name="restart_player">Option to restart the active media player during acc_on.</string>
+
+    <string name="acc_off_settings">What to do when contact is switched off (ACC_OFF)</string>
+    <string name="acc_off_call_title">ACC_OFF: Call method</string>
+    <string name="acc_off_text_title">ACC_OFF: String to be used</string>
+    <string name="switch_off_wifi_during_accoff">Switch WiFi OFF when contact is switched off</string>
+    <string name="dont_touch_wifi_during_accoff">Do not touch the WiFi state when contact is switched off</string>
+    <string name="switch_off_wifi">Option to switch off WiFi during acc_off.</string>
+    <string name="pause_player_during_accoff">Pause active media player when contact is switched off</string>
+    <string name="dont_pause_player_during_accoff">Do not pause active media player when contact is switched off</string>
+    <string name="pause_player">Option to pause the active media player during acc_off.</string>
+
+    <string name="about_info_screen">Information Screen</string>
+    <string name="donation">Donation</string>
+    <string name="paypal_donation_title">Donate via PayPal</string>
+    <string name="paypal_donation_summary">Not necessary as I will survice without it, but you could buy me a glass of wine</string>
+    <string name="paypal_url"  translatable="false">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=HK2KGH6QVA992</string>
+    <string name="about">About</string>
+    <string name="xda_discussion_title">XDA Discussion thread</string>
+    <string name="xda_discussion_summary">Discuss or ask questions about this module on XDA</string>
+    <string name="github_title">Source code</string>
+    <string name="github_summary">Explore the source code of FytReceiver on Github</string>
+
+    <string name="zygote_reboot_title">This change requires a soft reboot</string>
+    <string name="zygote_reboot_message">This change requires a soft reboot. Do you want to do that now?</string>
+    <string name="zygote_reboot_soft_reboot">Soft Reboot</string>
+    <string name="zygote_reboot_cancel">Cancel</string>
+</resources>

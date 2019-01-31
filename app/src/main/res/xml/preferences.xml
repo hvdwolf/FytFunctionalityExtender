@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <PreferenceScreen
+        android:title="@string/misc_settings"
+        android:key="misc_settings"> -->
+        <PreferenceCategory>
+            android:title="@string/misc_settings"
+            android:key="misc_settings">
+            <SwitchPreference
+                android:defaultValue="true"
+                android:key="use_root_access"
+                android:summaryOn="@string/use_root_access_sum_on"
+                android:summaryOff="@string/use_root_access_sum_off"
+                android:title="@string/use_root_access_title" />
+        </PreferenceCategory>
+<!--    </PreferenceScreen> -->
+
+<!--    <PreferenceScreen
+        android:title="@string/app_keymod_settings"
+        android:key="app_keymod_settings">
+        <PreferenceScreen
+            android:title="@string/dvd_key_settings"
+            android:key="dvd_key_settings">
+            <PreferenceCategory
+                android:title="@string/dvd_key_category"
+                android:key="dvd_key_category">
+                <ListPreference
+                    android:key="dvd_key_call_option"
+                    android:entries="@array/key_call_entries"
+                    android:entryValues="@array/key_call_values"
+                    android:defaultValue="pkgname"
+                    android:title="@string/dvd_key_call_title" />
+                <EditTextPreference
+                    android:dependency="dvd_key_call_option"
+                    android:key="dvd_key_entry"
+                    android:title="@string/dvd_key_text_title"
+                    android:defaultValue="com.syu.dvd" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="@string/eq_key_settings"
+            android:key="eq_key_settings">
+            <PreferenceCategory
+                android:title="@string/eq_key_category"
+                android:key="eq_key_category">
+                <ListPreference
+                    android:key="eq_key_call_option"
+                    android:entries="@array/key_call_entries"
+                    android:entryValues="@array/key_call_values"
+                    android:defaultValue="pkgname"
+                    android:title="@string/eq_key_call_title" />
+                <EditTextPreference
+                    android:dependency="eq_key_call_option"
+                    android:key="eq_key_entry"
+                    android:title="@string/eq_key_text_title"
+                    android:defaultValue="com.syu.eq" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="@string/media_key_settings"
+            android:key="media_key_settings">
+            <PreferenceCategory
+                android:title="@string/media_key_category"
+                android:key="media_key_category">
+                <ListPreference
+                    android:key="media_key_call_option"
+                    android:entries="@array/key_call_entries"
+                    android:entryValues="@array/key_call_values"
+                    android:defaultValue="pkgname"
+                    android:title="@string/media_key_call_title" />
+                <EditTextPreference
+                    android:dependency="media_key_call_option"
+                    android:key="media_key_entry"
+                    android:title="@string/media_key_text_title"
+                    android:defaultValue="com.syu.music" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="@string/navi_key_settings"
+            android:key="navi_key_settings">
+            <PreferenceCategory
+                android:title="@string/navi_key_category"
+                android:key="navi_key_category">
+                <ListPreference
+                    android:key="navi_key_call_option"
+                    android:entries="@array/key_call_entries"
+                    android:entryValues="@array/key_call_values"
+                    android:defaultValue="pkgname"
+                    android:title="@string/navi_key_call_title" />
+                <EditTextPreference
+                    android:dependency="navi_key_call_option"
+                    android:key="navi_key_entry"
+                    android:title="@string/navi_key_text_title"
+                    android:defaultValue="com.syu.onekeynavi" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+    </PreferenceScreen> -->
+    <PreferenceScreen
+            android:title="@string/acc_on_settings"
+            android:key="acc_on_settings">
+            <SwitchPreference
+                android:defaultValue="true"
+                android:key="switch_wifi_on"
+                android:summaryOn="@string/switch_on_wifi_during_accon"
+                android:summaryOff="@string/dont_touch_wifi_during_accon"
+                android:title="@string/switch_on_wifi" />
+            <SwitchPreference
+                android:defaultValue="false"
+                android:key="restart_player"
+                android:summaryOn="@string/restart_player_during_accon"
+                android:summaryOff="@string/dont_restart_player_during_accon"
+                android:title="@string/restart_player" />
+            <ListPreference
+                android:key="acc_on_call_option"
+                android:entries="@array/key_call_entries"
+                android:entryValues="@array/key_call_values"
+                android:defaultValue="sys_call"
+                android:title="@string/acc_on_call_title" />
+            <EditTextPreference
+                android:dependency="acc_on_call_option"
+                android:key="acc_on_entry"
+                android:title="@string/acc_on_text_title"
+                android:defaultValue="input keyevent 126" />
+    </PreferenceScreen>
+    <PreferenceScreen
+            android:title="@string/acc_off_settings"
+            android:key="acc_off_settings">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="switch_wifi_off"
+            android:summaryOn="@string/switch_off_wifi_during_accoff"
+            android:summaryOff="@string/dont_touch_wifi_during_accoff"
+            android:title="@string/switch_off_wifi" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="pause_player"
+            android:summaryOn="@string/pause_player_during_accoff"
+            android:summaryOff="@string/dont_pause_player_during_accoff"
+            android:title="@string/pause_player" />
+        <ListPreference
+                android:key="acc_off_call_option"
+                android:entries="@array/key_call_entries"
+                android:entryValues="@array/key_call_values"
+                android:defaultValue="sys_call"
+                android:title="@string/acc_off_call_title" />
+            <EditTextPreference
+                android:dependency="acc_off_call_option"
+                android:key="acc_off_entry"
+                android:title="@string/acc_off_text_title"
+                android:defaultValue="input keyevent 127" />
+    </PreferenceScreen>
+
+
+    <PreferenceScreen
+        android:title="@string/about_info_screen"
+        android:key="about_info">
+        <PreferenceCategory
+            android:key="ABOUT"
+            android:title="@string/about">
+            <Preference
+                android:key="xda_discussion"
+                android:title="@string/xda_discussion_title"
+                android:summary="@string/xda_discussion_summary">
+                <intent
+                    android:action="android.intent.action.VIEW"
+                    android:data="https://forum.xda-developers.com/android-auto/android-head-units/xposed-4-xposed-modules-to-tweak-intel-t3748009" />
+            </Preference>
+            <Preference
+                android:key="github"
+                android:title="@string/github_title"
+                android:summary="@string/github_summary">
+                <intent
+                    android:action="android.intent.action.VIEW"
+                    android:data="https://github.com/hvdwolf/FytReceiver" />
+            </Preference>
+        </PreferenceCategory>
+    </PreferenceScreen>
+
+</PreferenceScreen>

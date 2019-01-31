@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_settings">Applicatie voorkeuren</string>
+    <string name="misc_settings">Diverse AAN/UIT Instellingen</string>
+    <string name="use_root_access_sum_on">AAN: het systeem commando wordt uitgevoerd als root</string>
+    <string name="use_root_access_sum_off">UIT: het systeem commando wordt uitgevoerd als gewone gebruiker</string>
+
+    <string name="acc_on_off_settings">Definieer apks of acties wanneer het contact AAN of UIT geschakeld wordt; of uit sluimer toestand komend.</string>
+    <string name="acc_on_settings">Wat doen als contact wordt ingeschakeld (ACC_ON)</string>
+    <string name="acc_on_call_title">ACC_AAN: Aanroep methode</string>
+    <string name="acc_on_text_title">ACC_AAN: Te gebruiken commandoregel</string>
+    <string name="acc_off_settings">Wat doen als contact wordt uitgeschakeld (ACC_OFF)</string>
+    <string name="acc_off_call_title">ACC_UIT: Aanroep methode</string>
+    <string name="acc_off_text_title">ACC_UIT: Te gebruiken commandoregel</string>
+
+    <string name="about_info_screen">Informatie Scherm</string>
+    <string name="donation">Doneren</string>
+    <string name="paypal_donation_title">Doneer via PayPal</string>
+    <string name="paypal_donation_summary">Niet nodig omdat ik zonder ook wel overleef, maar je kunt een glas wijn voor me kopen</string>
+    <string name="about">Over</string>
+    <string name="xda_discussion_title">XDA Discussie thread</string>
+    <string name="xda_discussion_summary">Discussieer of stel vragen over deze module op XDA</string>
+    <string name="github_title">Bron code</string>
+    <string name="github_summary">Bekijk de bron code van de FytReceiver op Github</string>
+
+    <string name="zygote_reboot_title">Deze wijziging vereist een grafische herstart</string>
+    <string name="zygote_reboot_message">Deze wijziging vereist een herstart van de grafische schil. Wilt u dat nu doen?</string>
+    <string name="zygote_reboot_soft_reboot">Grafische herstart</string>
+<string name="zygote_reboot_cancel">Annuleren</string>
+</resources>
