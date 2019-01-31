@@ -14,6 +14,7 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
+/* shellExec and rootExec methods */
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStream;

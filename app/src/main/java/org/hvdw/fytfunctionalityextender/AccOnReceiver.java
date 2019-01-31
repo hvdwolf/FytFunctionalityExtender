@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
+
+
 public class AccOnReceiver extends BroadcastReceiver {
     private boolean use_root_access;
     private boolean switch_wifi_on;
@@ -33,5 +35,12 @@ public class AccOnReceiver extends BroadcastReceiver {
         } else {
             Log.d("fytfunctionalityextender-AccOnReceiver", "It is not requested to switch on WiFi");
         }
+
+        if (restart_player == true) {
+            Utils myUtils = new Utils();
+            myUtils.shellExec("input keyevent 126");
+            //shellExec("input keyevent 126");
+        }
     }
+
 }

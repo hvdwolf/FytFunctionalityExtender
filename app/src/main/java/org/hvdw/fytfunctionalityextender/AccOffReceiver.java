@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
+
 public class AccOffReceiver extends BroadcastReceiver {
     private boolean use_root_access;
     private boolean switch_wifi_off;
@@ -32,5 +33,13 @@ public class AccOffReceiver extends BroadcastReceiver {
         } else {
             Log.d("fytfunctionalityextender-AccOffReceiver", "It is not requested to switch off WiFi");
         }
+
+        if (pause_player == true) {
+            Utils myUtils = new Utils();
+            myUtils.shellExec("input keyevent 127");
+            //shellExec("input keyevent 127");
+        }
     }
+
+
 }
