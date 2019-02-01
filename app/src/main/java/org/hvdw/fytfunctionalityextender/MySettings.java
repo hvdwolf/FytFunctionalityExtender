@@ -18,29 +18,12 @@ class MySettings {
     public static final String ACTION_MEDIA_CALL_ENTRY_CHANGED = "org.hvdw.fytfunctionalityextender.action.ACTION_MEDIA_CALL_ENTRY_CHANGED";
     public static final String EXTRA_MEDIA_CALL_ENTRY_STRING = "org.hvdw.fytfunctionalityextender.extra.PREF_MEDIA_CALL_ENTRY_STRING";
 
-/*    public static final String BAND_CALL_OPTION = "band_key_call_option";
-    public static final String ACTION_BAND_CALL_OPTION_CHANGED = "org.hvdw.fytfunctionalityextender.action.ACTION_BAND_CALL_OPTION_CHANGED";
-    public static final String EXTRA_BAND_CALL_OPTION_STRING = "org.hvdw.fytfunctionalityextender.extra.PREF_BAND_CALL_OPTION_STRING";
-    public static final String BAND_CALL_ENTRY = "band_key_entry";
-    public static final String ACTION_BAND_CALL_ENTRY_CHANGED = "org.hvdw.fytfunctionalityextender.action.ACTION_BAND_CALL_ENTRY_CHANGED";
-    public static final String EXTRA_BAND_CALL_ENTRY_STRING = "org.hvdw.fytfunctionalityextender.extra.PREF_BAND_CALL_ENTRY_STRING";
-*/
-
     public static final String DVD_CALL_OPTION = "dvd_key_call_option";
     public static final String ACTION_DVD_CALL_OPTION_CHANGED = "org.hvdw.fytfunctionalityextender.action.ACTION_DVD_CALL_OPTION_CHANGED";
     public static final String EXTRA_DVD_CALL_OPTION_STRING = "org.hvdw.fytfunctionalityextender.extra.PREF_DVD_CALL_OPTION_STRING";
     public static final String DVD_CALL_ENTRY = "dvd_key_entry";
     public static final String ACTION_DVD_CALL_ENTRY_CHANGED = "org.hvdw.fytfunctionalityextender.action.ACTION_DVD_CALL_ENTRY_CHANGED";
     public static final String EXTRA_DVD_CALL_ENTRY_STRING = "org.hvdw.fytfunctionalityextender.extra.PREF_DVD_CALL_ENTRY_STRING";
-
-
-/*    public static final String EQ_CALL_OPTION = "eq_key_call_option";
-    public static final String ACTION_EQ_CALL_OPTION_CHANGED = "org.hvdw.fytfunctionalityextender.action.ACTION_EQ_CALL_OPTION_CHANGED";
-    public static final String EXTRA_EQ_CALL_OPTION_STRING = "org.hvdw.fytfunctionalityextender.extra.PREF_EQ_CALL_OPTION_STRING";
-    public static final String EQ_CALL_ENTRY = "eq_key_entry";
-    public static final String ACTION_EQ_CALL_ENTRY_CHANGED = "org.hvdw.fytfunctionalityextender.action.ACTION_EQ_CALL_ENTRY_CHANGED";
-    public static final String EXTRA_EQ_CALL_ENTRY_STRING = "org.hvdw.fytfunctionalityextender.extra.PREF_EQ_CALL_ENTRY_STRING";
-*/
 
     public static final String ACC_ON_CALL_OPTION = "acc_on_call_option";
     public static final String ACTION_ACC_ON_CALL_OPTION_CHANGED = "org.hvdw.fytfunctionalityextender.action.ACTION_ACC_ON_CALL_OPTION_CHANGED";
@@ -67,7 +50,6 @@ class MySettings {
     public static final String PAUSE_PLAYER = "pause_player";
     public static final String ACTION_PAUSE_PLAYER_CHANGED = "org.hvdw.fytfunctionalityextender.action.ACTION_PAUSE_PLAYER_CHANGED";
     public static final String EXTRA_PAUSE_PLAYER_ENABLED = "org.hvdw.fytfunctionalityextender.extra.PAUSE_PLAYER_ENABLED";
-
 
     /* End of all the necessary variables */
 

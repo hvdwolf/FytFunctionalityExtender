@@ -9,8 +9,6 @@ import android.content.ComponentName;
 import android.content.pm.PackageManager;
 import android.content.SharedPreferences;
 
-import android.net.Uri;
-import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
@@ -20,14 +18,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.ByteArrayOutputStream;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 
 class Utils {
     private static Context mContext = null;
@@ -41,20 +31,6 @@ class Utils {
 			return;
 		mContext = context;
 		sharedprefs = PreferenceManager.getDefaultSharedPreferences(mContext);
-		// backward compatible
-		/*if(!mPrefer.getBoolean(PREF_COMPATIBLE, false))
-		{
-			SharedPreferences prefer = mContext.getSharedPreferences(PREFER, Context.MODE_WORLD_READABLE);
-			if(prefer.contains(AUTOMODE))
-				mPrefer.edit().putBoolean(AUTOMODE, prefer.getBoolean(AUTOMODE, false)).commit();
-			if(prefer.contains(FAVORMASKVALUE))
-				mPrefer.edit().putInt(FAVORMASKVALUE, prefer.getInt(FAVORMASKVALUE, 250)).commit();
-			if(prefer.contains(PROXIMITYMAX))
-				mPrefer.edit().putFloat(PROXIMITYMAX, prefer.getFloat(PROXIMITYMAX, ProximitySensor.DEFAULT_DISTANCE)).commit();
-			if(prefer.contains(PROXIMITYMIN))
-				mPrefer.edit().putFloat(PROXIMITYMIN, prefer.getFloat(PROXIMITYMIN, ProximitySensor.DEFAULT_DISTANCE)).commit();
-			mPrefer.edit().putBoolean(PREF_COMPATIBLE, true).commit();
-		} */
     }
 
 /**********************************************************************************************************************************************/

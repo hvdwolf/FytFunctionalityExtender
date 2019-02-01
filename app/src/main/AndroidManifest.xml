@@ -9,7 +9,6 @@
         <activity android:label="@string/app_name" android:name="org.hvdw.fytfunctionalityextender.SettingsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-                <category android:name="de.robv.android.xposed.category.MODULE_SETTINGS"/>
             </intent-filter>
         </activity>
         <activity-alias android:label="@string/app_name" android:name="org.hvdw.fytfunctionalityextender.SettingsActivityAlias" android:enabled="true" android:targetActivity="org.hvdw.fytfunctionalityextender.SettingsActivity">
