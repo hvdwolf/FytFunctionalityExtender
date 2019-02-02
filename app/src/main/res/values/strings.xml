@@ -34,9 +34,9 @@
     <string name="paypal_url"  translatable="false">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=HK2KGH6QVA992</string>
     <string name="about">About</string>
     <string name="xda_discussion_title">XDA Discussion thread</string>
-    <string name="xda_discussion_summary">Discuss or ask questions about this module on XDA</string>
+    <string name="xda_discussion_summary">Discuss or ask questions about this little app on XDA</string>
     <string name="github_title">Source code</string>
-    <string name="github_summary">Explore the source code of FytReceiver on Github</string>
+    <string name="github_summary">Explore the source code of FFE(=FytFunctionalityExtender) on Github</string>
 
     <string name="zygote_reboot_title">This change requires a soft reboot</string>
     <string name="zygote_reboot_message">This change requires a soft reboot. Do you want to do that now?</string>

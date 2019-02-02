@@ -4,7 +4,7 @@
 <!--    <PreferenceScreen
         android:title="@string/misc_settings"
         android:key="misc_settings"> -->
-        <PreferenceCategory>
+<!--        <PreferenceCategory>
             android:title="@string/misc_settings"
             android:key="misc_settings">
             <SwitchPreference
@@ -13,7 +13,7 @@
                 android:summaryOn="@string/use_root_access_sum_on"
                 android:summaryOff="@string/use_root_access_sum_off"
                 android:title="@string/use_root_access_title" />
-        </PreferenceCategory>
+        </PreferenceCategory> -->
 <!--    </PreferenceScreen> -->
 
     <PreferenceScreen
@@ -31,7 +31,7 @@
                 android:summaryOn="@string/restart_player_during_accon"
                 android:summaryOff="@string/dont_restart_player_during_accon"
                 android:title="@string/restart_player" />
-            <ListPreference
+<!--            <ListPreference
                 android:key="acc_on_call_option"
                 android:entries="@array/key_call_entries"
                 android:entryValues="@array/key_call_values"
@@ -41,7 +41,7 @@
                 android:dependency="acc_on_call_option"
                 android:key="acc_on_entry"
                 android:title="@string/acc_on_text_title"
-                android:defaultValue="input keyevent 126" />
+                android:defaultValue="input keyevent 126" /> -->
     </PreferenceScreen>
     <PreferenceScreen
             android:title="@string/acc_off_settings"
@@ -58,7 +58,7 @@
             android:summaryOn="@string/pause_player_during_accoff"
             android:summaryOff="@string/dont_pause_player_during_accoff"
             android:title="@string/pause_player" />
-        <ListPreference
+<!--        <ListPreference
                 android:key="acc_off_call_option"
                 android:entries="@array/key_call_entries"
                 android:entryValues="@array/key_call_values"
@@ -68,7 +68,7 @@
                 android:dependency="acc_off_call_option"
                 android:key="acc_off_entry"
                 android:title="@string/acc_off_text_title"
-                android:defaultValue="input keyevent 127" />
+                android:defaultValue="input keyevent 127" /> -->
     </PreferenceScreen>
 
 
@@ -84,7 +84,7 @@
                 android:summary="@string/xda_discussion_summary">
                 <intent
                     android:action="android.intent.action.VIEW"
-                    android:data="https://forum.xda-developers.com/android-auto/android-head-units/xposed-4-xposed-modules-to-tweak-intel-t3748009" />
+                    android:data="https://forum.xda-developers.com/android-auto/android-head-units/joying-extra-tools-apk-apk-to-help-t3628200" />
             </Preference>
             <Preference
                 android:key="github"
@@ -92,7 +92,7 @@
                 android:summary="@string/github_summary">
                 <intent
                     android:action="android.intent.action.VIEW"
-                    android:data="https://github.com/hvdwolf/FytReceiver" />
+                    android:data="https://github.com/hvdwolf/FytFunctionalityExtender" />
             </Preference>
         </PreferenceCategory>
     </PreferenceScreen>
