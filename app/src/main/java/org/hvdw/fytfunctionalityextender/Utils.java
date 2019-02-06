@@ -2,7 +2,6 @@ package org.hvdw.fytfunctionalityextender;
 
 import android.app.Activity;
 
-import android.content.res.AssetManager;
 import android.content.Intent;
 import android.content.Context;
 import android.content.ComponentName;
@@ -21,7 +20,7 @@ import java.io.ByteArrayOutputStream;
 
 class Utils {
     private static Context mContext = null;
-    public static final String TAG = "fytfunctionalityextender-Utils";
+    public static final String TAG = "FFE-Utils";
     private boolean use_root_access;
     private static SharedPreferences sharedprefs = null;
 
@@ -59,8 +58,7 @@ class Utils {
 
 
 
-/*  More complicated versions of above shell and su call. As I want to run multiple commands I also need to look at that. 
-    copied from https://stackoverflow.com/questions/20932102/execute-shell-command-from-android/26654728
+/*  Copied from https://stackoverflow.com/questions/20932102/execute-shell-command-from-android/26654728
     from the code of CarloCannas
 */
     public static String shellExec(String... strings) {

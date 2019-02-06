@@ -1,7 +1,6 @@
 package org.hvdw.fytfunctionalityextender;
 
 import android.util.Log;
-//import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -13,7 +12,6 @@ import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.IntentFilter;
 
-import android.os.AsyncTask;
 import android.os.Handler;
 import android.widget.ProgressBar;
 import android.util.AttributeSet;
@@ -31,20 +29,13 @@ public class SettingsFragment extends PreferenceFragment implements OnSharedPref
     private BroadcastReceiver broadcastReceiver;
     IntentFilter intentFilter = new IntentFilter();
 
-
+    public static final String TAG = "FFE-SettingsFragment";
 
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
         mContext = getActivity();
-
-        //Toast mToast = Toast.makeText(mContext, "Retrieving installed apps", Toast.LENGTH_LONG);
-        //mToast.show();
-
     }
-
-    public static final String TAG = "fytfunctionalityextender-SettingsFragment";
-
 
 
     @SuppressWarnings("deprecation")
@@ -55,7 +46,7 @@ public class SettingsFragment extends PreferenceFragment implements OnSharedPref
 
         if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.N){
             Log.d(TAG, "onCreate: in Sofia 6.0.1 sdk23");
-            //Old version used on Sofia 6.0.1 sdk23
+            //Running on Sofia 6.0.1 sdk23
             getPreferenceManager().setSharedPreferencesMode(Context.MODE_WORLD_READABLE);
             addPreferencesFromResource(R.xml.preferences);
         } else {
@@ -65,7 +56,6 @@ public class SettingsFragment extends PreferenceFragment implements OnSharedPref
         }
 
         getActivity().registerReceiver(broadcastReceiver, intentFilter);
-        //getPackages(mContext);
     }
 
     @Override
@@ -99,6 +89,7 @@ public class SettingsFragment extends PreferenceFragment implements OnSharedPref
                 intent.putExtra(MySettings.EXTRA_USE_ROOT_ACCESS_ENABLED, sharedPreferences.getBoolean(key, true));
                 toastText = "BOOLEAN_KEY";
                 break;
+            /* ACCON settings */
             case MySettings.SWITCH_WIFI_ON:
                 intent.setAction(MySettings.ACTION_SWITCH_WIFI_ON_CHANGED);
                 intent.putExtra(MySettings.EXTRA_SWITCH_WIFI_ON_ENABLED, sharedPreferences.getBoolean(key, true));
@@ -109,6 +100,19 @@ public class SettingsFragment extends PreferenceFragment implements OnSharedPref
                 intent.putExtra(MySettings.EXTRA_RESTART_PLAYER_ENABLED, sharedPreferences.getBoolean(key, true));
                 toastText = "BOOLEAN_KEY";
                 break;
+            case MySettings.ACCON_PACKAGENAME_ENTRY:
+                intent.setAction(MySettings.ACTION_ACCON_PACKAGENAME_ENTRY_CHANGED);
+                intent.putExtra(MySettings.EXTRA_ACCON_PACKAGENAME_ENTRY_STRING, sharedPreferences.getString(key, ""));
+                break;
+            case MySettings.ACCON_INTENT_ENTRY:
+                intent.setAction(MySettings.ACTION_ACCON_INTENT_ENTRY_CHANGED);
+                intent.putExtra(MySettings.EXTRA_ACCON_INTENT_ENTRY_STRING, sharedPreferences.getString(key, ""));
+                break;
+            case MySettings.ACCON_SYSCALL_ENTRY:
+                intent.setAction(MySettings.ACTION_ACCON_SYSCALL_ENTRY_CHANGED);
+                intent.putExtra(MySettings.EXTRA_ACCON_SYSCALL_ENTRY_STRING, sharedPreferences.getString(key, ""));
+                break;
+                /* ACCOFF settings */
             case MySettings.SWITCH_WIFI_OFF:
                 intent.setAction(MySettings.ACTION_SWITCH_WIFI_OFF_CHANGED);
                 intent.putExtra(MySettings.EXTRA_SWITCH_WIFI_OFF_ENABLED, sharedPreferences.getBoolean(key, true));
@@ -119,37 +123,9 @@ public class SettingsFragment extends PreferenceFragment implements OnSharedPref
                 intent.putExtra(MySettings.EXTRA_PAUSE_PLAYER_ENABLED, sharedPreferences.getBoolean(key, true));
                 toastText = "BOOLEAN_KEY";
                 break;
-            /*case MySettings.DVD_CALL_OPTION:
-                intent.setAction(MySettings.ACTION_DVD_CALL_OPTION_CHANGED);
-                intent.putExtra(MySettings.EXTRA_DVD_CALL_OPTION_STRING, sharedPreferences.getString(key, ""));
-                break;
-            case MySettings.DVD_CALL_ENTRY:
-                intent.setAction(MySettings.ACTION_DVD_CALL_ENTRY_CHANGED);
-                intent.putExtra(MySettings.EXTRA_DVD_CALL_ENTRY_STRING, sharedPreferences.getString(key, ""));
-                break;
-            case MySettings.MEDIA_CALL_OPTION:
-                intent.setAction(MySettings.ACTION_MEDIA_CALL_OPTION_CHANGED);
-                intent.putExtra(MySettings.EXTRA_MEDIA_CALL_OPTION_STRING, sharedPreferences.getString(key, ""));
-                break;
-            case MySettings.MEDIA_CALL_ENTRY:
-                intent.setAction(MySettings.ACTION_MEDIA_CALL_ENTRY_CHANGED);
-                intent.putExtra(MySettings.EXTRA_MEDIA_CALL_ENTRY_STRING, sharedPreferences.getString(key, ""));
-                break; */
-            case MySettings.ACC_ON_CALL_OPTION:
-                intent.setAction(MySettings.ACTION_ACC_ON_CALL_OPTION_CHANGED);
-                intent.putExtra(MySettings.EXTRA_ACC_ON_CALL_OPTION_STRING, sharedPreferences.getString(key, ""));
-                break;
-            case MySettings.ACC_ON_CALL_ENTRY:
-                intent.setAction(MySettings.ACTION_ACC_ON_CALL_ENTRY_CHANGED);
-                intent.putExtra(MySettings.EXTRA_ACC_ON_CALL_ENTRY_STRING, sharedPreferences.getString(key, ""));
-                break;
-            case MySettings.ACC_OFF_CALL_OPTION:
-                intent.setAction(MySettings.ACTION_ACC_OFF_CALL_OPTION_CHANGED);
-                intent.putExtra(MySettings.EXTRA_ACC_OFF_CALL_OPTION_STRING, sharedPreferences.getString(key, ""));
-                break;
-            case MySettings.ACC_OFF_CALL_ENTRY:
-                intent.setAction(MySettings.ACTION_ACC_OFF_CALL_ENTRY_CHANGED);
-                intent.putExtra(MySettings.EXTRA_ACC_OFF_CALL_ENTRY_STRING, sharedPreferences.getString(key, ""));
+            case MySettings.ACCOFF_SYSCALL_ENTRY:
+                intent.setAction(MySettings.ACTION_ACCOFF_SYSCALL_ENTRY_CHANGED);
+                intent.putExtra(MySettings.EXTRA_ACCOFF_SYSCALL_ENTRY_STRING, sharedPreferences.getString(key, ""));
                 break;
             default:
                 Log.d(TAG, "Invalid setting encountered");

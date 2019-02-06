@@ -2,6 +2,10 @@
 *.apk
 *.ap_
 
+# Archives created for intermediate backups
+*.zip
+*.tgz
+
 # Files for the Dalvik VM
 *.dex
 

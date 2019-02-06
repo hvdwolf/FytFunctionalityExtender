@@ -15,6 +15,15 @@
                 android:title="@string/use_root_access_title" />
         </PreferenceCategory> -->
 <!--    </PreferenceScreen> -->
+<!--    <Preference
+        android:key="listapps"
+        android:title="@string/listapps_title"
+        android:summary="@string/listapps_summary">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="org.hvdw.fytfunctionalityextender"
+            android:targetClass="org.hvdw.fytfunctionalityextender.ListInstalledApps" />
+    </Preference> -->
 
     <PreferenceScreen
             android:title="@string/acc_on_settings"
@@ -31,17 +40,21 @@
                 android:summaryOn="@string/restart_player_during_accon"
                 android:summaryOff="@string/dont_restart_player_during_accon"
                 android:title="@string/restart_player" />
-<!--            <ListPreference
-                android:key="acc_on_call_option"
-                android:entries="@array/key_call_entries"
-                android:entryValues="@array/key_call_values"
-                android:defaultValue="sys_call"
-                android:title="@string/acc_on_call_title" />
             <EditTextPreference
-                android:dependency="acc_on_call_option"
-                android:key="acc_on_entry"
-                android:title="@string/acc_on_text_title"
-                android:defaultValue="input keyevent 126" /> -->
+                android:key="accon_packagename_entry"
+                android:title="@string/accon_packagename"
+                android:summary="@string/accon_packagename_summary"
+                android:defaultValue="" />
+            <EditTextPreference
+                android:key="accon_intent_entry"
+                android:title="@string/accon_intent"
+                android:summary="@string/accon_intent_summary"
+                android:defaultValue="" />
+            <EditTextPreference
+                android:key="accon_intent_syscall"
+                android:title="@string/accon_syscall"
+                android:summary="@string/accon_syscall_summary"
+                android:defaultValue="" />
     </PreferenceScreen>
     <PreferenceScreen
             android:title="@string/acc_off_settings"
@@ -58,17 +71,12 @@
             android:summaryOn="@string/pause_player_during_accoff"
             android:summaryOff="@string/dont_pause_player_during_accoff"
             android:title="@string/pause_player" />
-<!--        <ListPreference
-                android:key="acc_off_call_option"
-                android:entries="@array/key_call_entries"
-                android:entryValues="@array/key_call_values"
-                android:defaultValue="sys_call"
-                android:title="@string/acc_off_call_title" />
-            <EditTextPreference
-                android:dependency="acc_off_call_option"
-                android:key="acc_off_entry"
-                android:title="@string/acc_off_text_title"
-                android:defaultValue="input keyevent 127" /> -->
+        /* We will not start apks by packagename or intent when the unit switches off. We might need an extra system call though */
+        <EditTextPreference
+            android:key="accoff_intent_syscall"
+            android:title="@string/accoff_syscall"
+            android:summary="@string/accoff_syscall_summary"
+            android:defaultValue="" />
     </PreferenceScreen>
 
 

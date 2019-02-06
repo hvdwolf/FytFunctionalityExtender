@@ -6,31 +6,20 @@ class MySettings {
     public static final String SHARED_PREFS_FILENAME = PACKAGE_APP + "_preferences";
 
     /* The necessary variables */
-
     public static final String USE_ROOT_ACCESS = "use_root_access";
     public static final String ACTION_USE_ROOT_ACCESS_CHANGED = "org.hvdw.fytfunctionalityextender.action.ACTION_USE_ROOT_ACCESS_CHANGED";
     public static final String EXTRA_USE_ROOT_ACCESS_ENABLED = "org.hvdw.fytfunctionalityextender.extra.USE_ROOT_ACCESS_ENABLED";
 
-    public static final String MEDIA_CALL_OPTION = "media_key_call_option";
-    public static final String ACTION_MEDIA_CALL_OPTION_CHANGED = "org.hvdw.fytfunctionalityextender.action.ACTION_MEDIA_CALL_OPTION_CHANGED";
-    public static final String EXTRA_MEDIA_CALL_OPTION_STRING = "org.hvdw.fytfunctionalityextender.extra.PREF_MEDIA_CALL_OPTION_STRING";
-    public static final String MEDIA_CALL_ENTRY = "media_key_entry";
-    public static final String ACTION_MEDIA_CALL_ENTRY_CHANGED = "org.hvdw.fytfunctionalityextender.action.ACTION_MEDIA_CALL_ENTRY_CHANGED";
-    public static final String EXTRA_MEDIA_CALL_ENTRY_STRING = "org.hvdw.fytfunctionalityextender.extra.PREF_MEDIA_CALL_ENTRY_STRING";
+    public static final String ACCON_PACKAGENAME_ENTRY = "accon_packagename_entry";
+    public static final String ACTION_ACCON_PACKAGENAME_ENTRY_CHANGED = "org.hvdw.fytfunctionalityextender.action.ACTION_ACCON_PACKAGENAME_ENTRY_CHANGED";
+    public static final String EXTRA_ACCON_PACKAGENAME_ENTRY_STRING = "org.hvdw.fytfunctionalityextender.extra.PREF_ACCON_PACKAGENAME_ENTRY_STRING";
+    public static final String ACCON_INTENT_ENTRY = "accon_intent_entry";
+    public static final String ACTION_ACCON_INTENT_ENTRY_CHANGED = "org.hvdw.fytfunctionalityextender.action.ACTION_ACCON_INTENT_ENTRY_CHANGED";
+    public static final String EXTRA_ACCON_INTENT_ENTRY_STRING = "org.hvdw.fytfunctionalityextender.extra.PREF_ACCON_INTENT_ENTRY_STRING";
+    public static final String ACCON_SYSCALL_ENTRY = "accon_syscall_entry";
+    public static final String ACTION_ACCON_SYSCALL_ENTRY_CHANGED = "org.hvdw.fytfunctionalityextender.action.ACTION_ACCON_SYSCALL_ENTRY_CHANGED";
+    public static final String EXTRA_ACCON_SYSCALL_ENTRY_STRING = "org.hvdw.fytfunctionalityextender.extra.PREF_ACCON_SYSCALL_ENTRY_STRING";
 
-    public static final String DVD_CALL_OPTION = "dvd_key_call_option";
-    public static final String ACTION_DVD_CALL_OPTION_CHANGED = "org.hvdw.fytfunctionalityextender.action.ACTION_DVD_CALL_OPTION_CHANGED";
-    public static final String EXTRA_DVD_CALL_OPTION_STRING = "org.hvdw.fytfunctionalityextender.extra.PREF_DVD_CALL_OPTION_STRING";
-    public static final String DVD_CALL_ENTRY = "dvd_key_entry";
-    public static final String ACTION_DVD_CALL_ENTRY_CHANGED = "org.hvdw.fytfunctionalityextender.action.ACTION_DVD_CALL_ENTRY_CHANGED";
-    public static final String EXTRA_DVD_CALL_ENTRY_STRING = "org.hvdw.fytfunctionalityextender.extra.PREF_DVD_CALL_ENTRY_STRING";
-
-    public static final String ACC_ON_CALL_OPTION = "acc_on_call_option";
-    public static final String ACTION_ACC_ON_CALL_OPTION_CHANGED = "org.hvdw.fytfunctionalityextender.action.ACTION_ACC_ON_CALL_OPTION_CHANGED";
-    public static final String EXTRA_ACC_ON_CALL_OPTION_STRING = "org.hvdw.fytfunctionalityextender.extra.PREF_ACC_ON_CALL_OPTION_STRING";
-    public static final String ACC_ON_CALL_ENTRY = "acc_on_entry";
-    public static final String ACTION_ACC_ON_CALL_ENTRY_CHANGED = "org.hvdw.fytfunctionalityextender.action.ACTION_ACC_ON_CALL_ENTRY_CHANGED";
-    public static final String EXTRA_ACC_ON_CALL_ENTRY_STRING = "org.hvdw.fytfunctionalityextender.extra.PREF_ACC_ON_CALL_ENTRY_STRING";
     public static final String SWITCH_WIFI_ON = "switch_wifi_on";
     public static final String ACTION_SWITCH_WIFI_ON_CHANGED = "org.hvdw.fytfunctionalityextender.action.ACTION_SWITCH_WIFI_ON_CHANGED";
     public static final String EXTRA_SWITCH_WIFI_ON_ENABLED = "org.hvdw.fytfunctionalityextender.extra.SWITCH_WIFI_ON_ENABLED";
@@ -38,18 +27,15 @@ class MySettings {
     public static final String ACTION_RESTART_PLAYER_CHANGED = "org.hvdw.fytfunctionalityextender.action.ACTION_RESTART_PLAYER_CHANGED";
     public static final String EXTRA_RESTART_PLAYER_ENABLED = "org.hvdw.fytfunctionalityextender.extra.RESTART_PLAYER_ENABLED";
 
-    public static final String ACC_OFF_CALL_OPTION = "acc_off_call_option";
-    public static final String ACTION_ACC_OFF_CALL_OPTION_CHANGED = "org.hvdw.fytfunctionalityextender.action.ACTION_ACC_OFF_CALL_OPTION_CHANGED";
-    public static final String EXTRA_ACC_OFF_CALL_OPTION_STRING = "org.hvdw.fytfunctionalityextender.extra.PREF_ACC_OFF_CALL_OPTION_STRING";
-    public static final String ACC_OFF_CALL_ENTRY = "acc_off_entry";
-    public static final String ACTION_ACC_OFF_CALL_ENTRY_CHANGED = "org.hvdw.fytfunctionalityextender.action.ACTION_ACC_OFF_CALL_ENTRY_CHANGED";
-    public static final String EXTRA_ACC_OFF_CALL_ENTRY_STRING = "org.hvdw.fytfunctionalityextender.extra.PREF_ACC_OFF_CALL_ENTRY_STRING";
     public static final String SWITCH_WIFI_OFF = "switch_wifi_off";
     public static final String ACTION_SWITCH_WIFI_OFF_CHANGED = "org.hvdw.fytfunctionalityextender.action.ACTION_SWITCH_WIFI_OFF_CHANGED";
     public static final String EXTRA_SWITCH_WIFI_OFF_ENABLED = "org.hvdw.fytfunctionalityextender.extra.SWITCH_WIFI_OFF_ENABLED";
     public static final String PAUSE_PLAYER = "pause_player";
     public static final String ACTION_PAUSE_PLAYER_CHANGED = "org.hvdw.fytfunctionalityextender.action.ACTION_PAUSE_PLAYER_CHANGED";
     public static final String EXTRA_PAUSE_PLAYER_ENABLED = "org.hvdw.fytfunctionalityextender.extra.PAUSE_PLAYER_ENABLED";
+    public static final String ACCOFF_SYSCALL_ENTRY = "accoff_syscall_entry";
+    public static final String ACTION_ACCOFF_SYSCALL_ENTRY_CHANGED = "org.hvdw.fytfunctionalityextender.action.ACTION_ACCOFF_SYSCALL_ENTRY_CHANGED";
+    public static final String EXTRA_ACCOFF_SYSCALL_ENTRY_STRING = "org.hvdw.fytfunctionalityextender.extra.PREF_ACCOFF_SYSCALL_ENTRY_STRING";
 
     /* End of all the necessary variables */
 
