@@ -1,6 +1,8 @@
 # FytFunctionalityExtender
 Add some extra functionalities to standard (Joying) FYT firmware. This FYT firmware is used on Android car head units wich are based on FYT MCU and hardware and the software on top of that.
 
+# This does work on android 6 but not (yet?) on android 8 due to the background limitations.
+
 ![logo](https://github.com/hvdwolf/FytFunctionalityExtender/blob/master/logo.png)
 
 So what does it do?
